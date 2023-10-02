@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    double vetorOriginal[10];
+    double vetorQuadrado[10];
+
+    for (int i = 0; i < 10; i++) {
+        scanf("%lf", &vetorOriginal[i]);
+        vetorQuadrado[i] = vetorOriginal[i] * vetorOriginal[i];
+    }
+
+    printf("Vetor Original:\n");
+    for (int i = 0; i < 10; i++) {
+        printf("%lf ", vetorOriginal[i]);
+    }
+
+    printf("\nVetor Quadrado:\n");
+    for (int i = 0; i < 10; i++) {
+        printf("%lf ", vetorQuadrado[i]);
+    }
+}
